@@ -26,12 +26,13 @@ gallery: true
 
             <h1>{{ page.title }}</h1>
             {% assign locations = page.location | split: ";" %}
-            <p>Locations: 
+            <p>{{ page.description }}</p>
+            <p>Location: 
                 {% for t in locations %}
                 <a class="mr-3" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
                 {% endfor %}
             </p>
-            <p>{{ page.description }}</p>
+            <p>{{ page.latitude }}, {{ page.longitude }}</p>
             
         </div>
         {% for item in images %}
