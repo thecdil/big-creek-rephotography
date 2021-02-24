@@ -55,23 +55,6 @@ function makeCard(obj) {
     }
     {% endunless %}{% endfor %}
     card += '</p>';
-    // media type
-    if(obj.format != "") {
-        card += '<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ "/browse.html" | relative_url }}#' + encodeURIComponent(obj.format) + '">' + 
-        obj.format.split("/").pop().toUpperCase() + ' <svg class="bi icon-sprite"><use xlink:href="{{ "/assets/lib/bootstrap-icons.svg" | relative_url }}#';
-        if(obj.format.includes('image')){
-            card += '{{ site.data.theme.icon-image | default: "image" }}';
-        } else if(obj.format.includes('audio')){
-            card += '{{ site.data.theme.icon-audio | default: "file-play" }}';
-        } else if(obj.format.includes('video')){
-            card += '{{ site.data.theme.icon-video | default: "film" }}';
-        } else if(obj.format.includes('pdf')){
-            card += '{{ site.data.theme.icon-pdf | default: "file-richtext" }}';
-        } else {
-            card += '{{ site.data.theme.icon-default | default: "file-earmark" }}';
-        }
-        card += '"/></svg></a></small></p>';
-    }
     // view button
     card += '<hr><a href="' + itemHref + '" class="btn btn-sm btn-light" title="link to ' + obj.title + '">View Full Record</a>';
     // close divs
