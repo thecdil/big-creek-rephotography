@@ -1,0 +1,29 @@
+<script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+<script>
+    // init Juxtapose https://github.com/NUKnightLab/juxtapose
+    // content above must contain var juxtaposeImages with the two img src
+    function createJuxtapose() {
+        slider = new juxtapose.JXSlider('#juxtaposeContainer', juxtaposeImages,
+        {
+            animate: true,
+            showLabels: true,
+            showCredits: true,
+            startingPosition: "50%",
+            makeResponsive: true
+        });
+    }
+    // toggle on juxtapose btn click
+    $("#viewJuxtapose").on( "click", function() {
+        // toggle view of img divs
+        $("#lightgallery").toggleClass("d-none");
+        $("#juxtaposeContainer").toggleClass("d-none");
+        $("#viewJuxtapose").toggleClass("active");
+        // init the juxtapose just once
+        if( !$("#juxtaposeContainer").hasClass("juxtaposeActive") ) {
+            createJuxtapose();
+            $("#juxtaposeContainer").addClass("juxtaposeActive");
+        } 
+
+    });
+    
+</script>

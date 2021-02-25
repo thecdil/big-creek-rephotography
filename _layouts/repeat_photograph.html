@@ -2,6 +2,7 @@
 layout: default
 item-meta: true
 gallery: true
+juxtapose: true
 ---
 {% assign images = site.data.photograph_metadata_images | where: "compare_id",page.objectid | reverse %}
 
@@ -9,15 +10,54 @@ gallery: true
 
     {% include item/breadcrumbs.html %}
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mb-4">
         <div class="col-12">
             
-            <div class="row align-items-center mb-4" id="lightgallery">
+            <div class="row align-items-center" id="lightgallery">
                 {% for i in images %}
                 <div class="col-6 gallery-img" data-src="{{ i.object_download | relative_url }}">
                     <img src="{{ i.image_small | relative_url }}" alt="item thumbnail for {{ i.title | escape }}" class="img-fluid">
                 </div>
                 {% endfor %}
+            </div>
+            <div id="juxtaposeContainer" class="d-none"></div>
+            <script>
+                // add imgs for Juxtapose js 
+                var juxtaposeImages = [ { src: "{{ images[0].image_small | relative_url }}" }, { src: "{{ images[1].image_small | relative_url }}" } ];
+            </script>
+            
+            <div class="mt-2 mb-4">
+                <button class="btn btn-sm btn-outline-primary" type="button" data-toggle="collapse" data-target="#itemMetadata" aria-expanded="false" aria-controls="itemMetadata">
+                    {% include feature/icon.html icon="info-circle-fill" %}
+                    Information
+                </button>
+                <button id="viewGalleryBtn" class="btn btn-sm btn-outline-primary" type="button">
+                    {% include feature/icon.html icon="fullscreen" %}
+                    View full screen
+                </button>
+                <button id="viewJuxtapose" class="btn btn-sm btn-outline-primary" type="button">
+                    {% include feature/icon.html icon="layout-split" %}
+                    Juxtapose
+                </button>
+                
+                <div class="collapse" id="itemMetadata">
+                    <div class="">
+                        <div class="row">
+                            {% for item in images %}
+                            <div class="col-md-6">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                    {% include item/repeat-metadata.html %}
+                                    <a target="_blank" rel="noopener" href="{{ item.object_download | relative_url }}" class="btn btn-outline-info">Download {{ item.format | split: '/' | last | upcase }}</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <hr>
+                    </div>
+                </div> 
+
             </div>
 
         </div>
@@ -35,18 +75,9 @@ gallery: true
             <p><strong>Latitude & Longitude:</strong> {{ page.latitude }}, {{ page.longitude }}</p>
             
         </div>
-        {% for item in images %}
-        <div class="col-md-6">
-            <div class="card mb-3">
-                <div class="card-body">
-                {% include item/repeat-metadata.html %}
-                </div>
-            </div>
-        </div>
-        {% endfor %}
+        
     </div>
 
-    
     {% include item/browse-buttons.html %}
     
 </div>
