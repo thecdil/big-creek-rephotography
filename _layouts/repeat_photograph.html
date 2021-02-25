@@ -15,7 +15,7 @@ juxtapose: true
             
             <div class="row align-items-center" id="lightgallery">
                 {% for i in images %}
-                <div class="col-6 gallery-img" data-src="{{ i.object_download | relative_url }}">
+                <div class="col gallery-img" data-src="{{ i.object_download | relative_url }}">
                     <img src="{{ i.image_small | relative_url }}" alt="item thumbnail for {{ i.title | escape }}" class="img-fluid">
                 </div>
                 {% endfor %}
@@ -72,7 +72,7 @@ juxtapose: true
                 <a class="mr-3" href="{{ t | strip | url_param_escape | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
                 {% endfor %}
             </p>
-            <p><strong>Latitude & Longitude:</strong> {{ page.latitude }}, {{ page.longitude }}</p>
+            <p><strong>Latitude & Longitude:</strong> <a href="{{ '/map.html#' | append: page.latitude  | append: ',' | append: page.longitude | relative_url}}">{{ page.latitude }}, {{ page.longitude }}</a></p>
             
         </div>
         
