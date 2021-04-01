@@ -18,16 +18,16 @@ source-code: https://github.com/thecdil/big-creek-rephotography
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: Big Creek Rephotography
+title: Human and Ecological Change in Big Creek
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: FCRNRW repeat photography project
+tagline: A repeat photography project in Idaho's Frank Church⎼River of No Return Wilderness
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "A project repeat photographing historic images from Big Creek drainage to explore environmental changes and human values in the landscape"
+description: "Repeat photography of historical images taken along the Big Creek drainage, located in Idaho's Frank Church⎼River of No Return Wilderness. Comparison of historical and contemporary photographs, in conjunction with stakeholder interviews, gives insight into the human and environmental changes that have occured in the past century, and the values of those changes."
 # keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
-keywords: idaho;history;inland northwest
+keywords: idaho;Frank Church⎼River of No Return Wilderness;ecological change; repeat photography
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: CollectionBuilder
+author: evanwill
 # Organization branding
 organization-name: "Digital Initiatives, University of Idaho Library"
 organization-link: https://www.lib.uidaho.edu/digital/
