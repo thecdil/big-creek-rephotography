@@ -8,22 +8,16 @@ permalink: /about.html
 
 {% include feature/jumbotron.html %} 
 
-{% include feature/nav-menu.html sections="About CollectionBuilder SA;About the About Page" %}
+{% include feature/nav-menu.html sections="About the Project" %}
 
-## About CollectionBuilder SA
+## About the Project
 
-This demo collection features items from the University of Idaho Library's [Digital Collections](https://www.lib.uidaho.edu/digital/), and is build using [CollectionBuilder-SA](https://github.com/CollectionBuilder/collectionbuilder-sa).
+*Human and Ecological Change in Big Creek* is a project comparing historical and contemporary photographs taken along the Big Creek drainage in Idaho's Frank Church⎼River of No Return Wilderness, in conjunction with stakeholder interviews, to give insight into the human and environmental changes that have occurred in the past century, and the values of those changes.
+The research was completed by Micaela Petrini in 2019, who hiked throughout the wilderness area with her camera to rephotograph locations found in historical images, as well as speak with people connected to the region.
 
-CollectionBuilder-SA is a "Stand Alone" template for creating digital collection and exhibit websites using Jekyll, given:
+This digital exhibit presents pairs of images collected by Petrini along with her descriptions.
+Each pair can be viewed individually or visualized overlapping by clicking the "Juxtapose" button.
 
-- a CSV of collection metadata
-- a folder of images, PDFs, audio, or video files
-
-Driven by your collection metadata, the template generates engaging visualizations to browse and explore your objects.
-The resulting static site can be hosted on any basic web server.
-
-[CollectionBuilder](https://github.com/CollectionBuilder/) is an set of open source tools for creating digital collection and exhibit websites that are driven by metadata and powered by modern static web technology.
-See [Getting Started Docs](https://collectionbuilder.github.io/docs/introduction.html) for detailed information.
-
+The research project was supported by the [Confluence Lab](https://www.theconfluencelab.org/) and the exhibit was developed in collaboration with the [Center for Digital Inquiry and Learning](https://cdil.lib.uidaho.edu/).
 
 {% include feature/item-figure.html objectid="fcrnrw_017" width="75" %} 
