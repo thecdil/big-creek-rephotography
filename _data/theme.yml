@@ -21,7 +21,7 @@ featured-subjects: # separate by semi-colon(';')
 featured-subjects-max: 5 # set number of top subjects to display if auto generating
 # Same as subjects above. Leave blank for automatically generated locations. Or add locations you'd like to feature. For list see data/places.csv
 featured-locations: # separate by semi-colon(';') 
-featured-locations-max: 3 # set number of top locations to display if auto generating
+featured-locations-max: 15 # set number of top locations to display if auto generating
 
 ##########
 # ABOUT PAGE
