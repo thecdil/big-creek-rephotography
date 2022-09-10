@@ -11,7 +11,7 @@ credits: false
 
 ## About the Project
 
-*Human and Ecological Change in Big Creek* is a project comparing historical and contemporary photographs taken along the Big Creek drainage in Idaho's Frank Church⎼River of No Return Wilderness, in conjunction with stakeholder interviews, to give insight into the human and environmental changes that have occurred in the past century, and the values of those changes.
+*Human and Ecological Change in Big Creek* is a project comparing historical and contemporary photographs taken along the Big Creek drainage in Idaho's Frank Church-River of No Return Wilderness, in conjunction with stakeholder interviews, to give insight into the human and environmental changes that have occurred in the past century, and the values of those changes.
 The research was completed by Micaela Petrini in 2019, who hiked throughout the wilderness area with her camera to rephotograph locations found in historical images, as well as to speak with people connected to the region.
 
 This digital exhibit presents pairs of images collected by Petrini along with her descriptions.
