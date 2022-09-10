@@ -64,7 +64,7 @@ juxtapose: true
 
         <div class="col-md-7">
 
-            <h1>{{ page.title }}</h1>
+            <h1>{{ page.title }} - {{ page.comparison_dates }}</h1>
             {% assign locations = page.location | split: ";" %}
             {{ page.description | markdownify }}
             <p><strong>Location:</strong>
