@@ -29,10 +29,10 @@ keywords: idaho;Frank Church-River of No Return Wilderness;ecological change; re
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: evanwill
 # Organization branding
-organization-name: "Digital Initiatives, University of Idaho Library"
-organization-link: https://www.lib.uidaho.edu/digital/
-organization-logo-banner: https://www.lib.uidaho.edu/media/digital/justdi_logo_sm.png
-organization-logo-nav: https://www.lib.uidaho.edu/media/digital/bannerlogo_allwhite.png
+organization-name: "Confluence Lab"
+organization-link: https://www.theconfluencelab.org/
+organization-logo-banner: /assets/img/confluencelab-logo-large.webp
+organization-logo-nav: /assets/img/confluencelab-logo-large.webp
 
 ##########
 # COLLECTION SETTINGS
